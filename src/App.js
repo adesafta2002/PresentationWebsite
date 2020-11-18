@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react';
 import './App.css';
 import Body from './Components/Body';
 import Navbar from './Components/Navbar';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {HashRouter as Router, Switch, Route} from 'react-router-dom';
 import MyProject from './Components/MyProjects';
 import Contact from './Components/Contact';
 
