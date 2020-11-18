@@ -59,7 +59,7 @@ const getLocalTheme = () => {
       
 
       
-        <h1>HEllo world</h1>
+        
     </div>
     </Router>
     
