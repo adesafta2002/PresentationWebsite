@@ -1,0 +1,41 @@
+import React from 'react';
+import {FaBars} from 'react-icons/fa';
+import {Link} from 'react-router-dom';
+
+const Navbar = ({theme, setTheme,nav, setNav}) =>{
+    const statusHandler = (e) =>{
+        
+        setTheme(Boolean(Number(e.target.value)))
+        console.log(Number(theme))
+        
+    }
+    const navHandler = () =>{
+        setNav(!nav)
+        
+    }
+    return(
+        
+        <nav className={` ${theme ? "" : "navl"} nav `}>
+            
+            <h1>Safta Adelin Gabriel</h1>
+            <ul className={` ${nav ? "nav_show" : ""}`}>
+                <li>
+                    <select  onChange={statusHandler} defaultValue={`${theme ? "1": "0"}`}>
+                        <option value="0" >Color Theme </option>
+                        <option value="1" >Dark Theme </option>
+                        
+                    </select>
+                </li>
+                <li><Link to="/contact"><button>Contact Me</button></Link></li>
+                <li><Link to="/projects"><button>My projects</button></Link></li>
+                <li><Link to="/"><button>About me</button></Link></li>
+            </ul>
+            <div className="BarIcon" onClick={navHandler}>
+            <FaBars/>
+            </div>
+            
+        </nav>
+    )
+}
+
+export default Navbar
