@@ -567,6 +567,7 @@ display: none;
   background:linear-gradient(to right, rgb(238,232,170), 	#C0C0C0);
   font-size: 20px;
   color: rgba(0, 0, 0, 0.644);
+  cursor: pointer;
 }
 .head{
 display: flex !important;
