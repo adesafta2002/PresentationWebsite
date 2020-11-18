@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react';
 import './App.css';
 import Body from './Components/Body';
 import Navbar from './Components/Navbar';
-import {HashRouter as Router, Switch, Route} from 'react-router-dom';
+import {HashRouter , Switch, Route} from 'react-router-dom';
 import MyProject from './Components/MyProjects';
 import Contact from './Components/Contact';
 
@@ -41,7 +41,7 @@ const getLocalTheme = () => {
   
   return (
     
-    <Router  basename="/">
+    <HashRouter  basename="/">
     <div className={` ${theme ? "" : "app_light"} App `}>
       <Navbar theme={theme} setTheme={setTheme} nav={nav} setNav={setNav}/>
         <Switch>
@@ -61,7 +61,7 @@ const getLocalTheme = () => {
       
         
     </div>
-    </Router>
+    </HashRouter>
     
   );
 }
