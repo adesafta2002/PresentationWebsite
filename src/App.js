@@ -45,13 +45,13 @@ const getLocalTheme = () => {
     <div className={` ${theme ? "" : "app_light"} App `}>
       <Navbar theme={theme} setTheme={setTheme} nav={nav} setNav={setNav}/>
         <Switch>
-            <Route  exact path="https://adesafta2002.github.io/PresentationWebsite/">
+            <Route  exact path="/PresentationWebsite/">
                 <Body theme={theme}/>
             </Route>
-            <Route  exact path="https://adesafta2002.github.io/PresentationWebsite/projects">
+            <Route  exact path="/PresentationWebsite/projects">
                 <MyProject theme={theme} coin={coin} setCoin={setCoin} />
             </Route>
-            <Route  exact path="https://adesafta2002.github.io/PresentationWebsite/contact">
+            <Route  exact path="/PresentationWebsite/contact">
                 <Contact theme={theme}/>
             </Route>
 
