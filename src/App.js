@@ -41,7 +41,7 @@ const getLocalTheme = () => {
   
   return (
     
-    <Router>
+    <Router  basename="/">
     <div className={` ${theme ? "" : "app_light"} App `}>
       <Navbar theme={theme} setTheme={setTheme} nav={nav} setNav={setNav}/>
         <Switch>
