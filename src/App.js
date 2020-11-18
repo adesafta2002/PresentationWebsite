@@ -40,6 +40,7 @@ const getLocalTheme = () => {
 
   
   return (
+    
     <Router>
     <div className={` ${theme ? "" : "app_light"} App `}>
       <Navbar theme={theme} setTheme={setTheme} nav={nav} setNav={setNav}/>
@@ -58,7 +59,7 @@ const getLocalTheme = () => {
       
 
       
-      
+        <h1>HEllo world</h1>
     </div>
     </Router>
     
