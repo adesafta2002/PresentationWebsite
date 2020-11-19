@@ -755,6 +755,10 @@ display: flex !important;
     font-size: 1.5rem;
     
   }
+  .cards{
+    width: 250px!important ;
+  height: 300px !important;
+  }
 }
 @media only screen and (max-width: 402px) {
   .nav h1{
@@ -770,3 +774,32 @@ display: flex !important;
     
   }
 }
+@media only screen and (max-width: 394px) {
+  .nav h1{
+    padding-top: 25px;
+    font-size: 17px !important;
+    
+  }
+  .BarIcon{
+    display: block;
+    padding:19px 3rem;
+    padding-top: 24px;
+    font-size: 1.3rem;
+    
+  }
+}
+@media only screen and (max-width: 370px) {
+  .nav h1{
+    padding-top: 25px;
+    font-size: 16px !important;
+    
+  }
+  .BarIcon{
+    display: block;
+    padding:19px 3rem;
+    padding-top: 26px;
+    font-size: 1.2rem;
+    
+  }
+}
+

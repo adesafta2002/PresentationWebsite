@@ -132,3 +132,70 @@
     cursor: pointer;
     pointer-events: none;
   }
+
+  @media only screen and (max-width: 601px) {
+    .todo-list {
+      min-width: 70%;
+      
+    }
+    .option{
+      width: 5px;
+    }
+    select {
+      
+      width: 8rem;
+    }
+  }
+  @media only screen and (max-width: 550px) {
+    .todo-list {
+      min-width: 70%;
+      
+    }
+    .option{
+      width: 10px;
+    }
+    select {
+      
+      width: 30px;}
+      .select::after {
+        
+        padding: 0.6rem;
+        
+      }
+    
+  }
+  @media only screen and (max-width: 420px) {
+    .todo-input{
+      min-width: 50%;
+    }
+    .todo-list {
+      min-width: 60%;
+      
+    }
+    .option{
+      width: 1px;
+    }
+    select {
+      height: 2.1rem;
+      width: 25px;
+    }
+    .select::after {
+        
+        padding: 0.6rem;
+        top: 0;
+        right: 0;
+        
+      }
+      form input{
+        font-size:1.3rem;
+      }
+      .fa-plus-square{
+        font-size: 1.7rem;
+        
+      }
+      .todo-button{
+        height: 2.1rem;
+        align-items: center;
+      }
+    
+  }
