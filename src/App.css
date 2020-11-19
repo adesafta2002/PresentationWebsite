@@ -644,18 +644,21 @@ display: flex !important;
 
 @media only screen and (max-width: 550px) {
   .body2 p{
-    font-size: 10px !important;
+    font-size: 12px !important;
   }
   .body2 h1{
     font-size: 15px !important;
   }
-  .nav li{
-    padding-left: 10px;
+  .nav button{
+    font-size: 12px !important;
+  }
+  .nav select{
+    font-size: 12px !important;
   }
 }
-@media only screen and (max-width: 330px) {
+@media only screen and (max-width: 335px) {
   .body2 p{
-    font-size: 9px !important;
+    font-size: 12px !important;
   }
   .body2 h1{
     font-size: 15px !important;
@@ -663,6 +666,7 @@ display: flex !important;
   .nav li{
     padding-left: 10px;
   }
+  
 }
 @media only screen and (max-width: 1100px) {
   .body1 {
@@ -834,9 +838,25 @@ display: flex !important;
   .BarIcon{
     display: block;
     padding:19px 3rem;
-    padding-top: 25px;
+    padding-top: 24px;
     font-size: 1.2rem;
     
   }
 }
+@media only screen and (max-width: 340px) {
+  .nav h1{
+    padding-top: 25px;
+    font-size: 13px !important;
+    
+  }
+  
+  .BarIcon{
+    display: block;
+    padding:19px 3rem;
+    padding-top: 25px;
+    font-size: 1.1rem;
+    
+  }
+}
+
 
