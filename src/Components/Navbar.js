@@ -26,9 +26,9 @@ const Navbar = ({theme, setTheme,nav, setNav}) =>{
                         
                     </select>
                 </li>
-                <li><Link to="/PresentationWebsite/contact"><button>Contact Me</button></Link></li>
-                <li><Link to="/PresentationWebsite/projects"><button>My projects</button></Link></li>
-                <li><Link to="/PresentationWebsite/"><button>About me</button></Link></li>
+                <li><Link to="/contact"><button>Contact Me</button></Link></li>
+                <li><Link to="/projects"><button>My projects</button></Link></li>
+                <li><Link to="/"><button>About me</button></Link></li>
             </ul>
             <div className="BarIcon" onClick={navHandler}>
             <FaBars/>
