@@ -15,7 +15,7 @@ const Body = ({theme}) =>{
                 
                 <div className={`box1 ${theme ? "" : "box1_lightl"}`}>
                     <h1>Safta Adelin Gabriel</h1>
-                    <p> &nbsp; &nbsp;  &nbsp; Hello everyone and welcome to my presentation webiste! I am  an 18 years old Romanian, and a first year 
+                    <p> &nbsp; &nbsp;  &nbsp; Hello everyone and welcome to my presentation Website! I am  an 18 years old Romanian, and a first year 
                         student at the Faculty of Mathematics and Computer Science of the Univeristy of Bucharest.
                         I am very passionate about what I do, and I put a lot of time and effort into always learning new things as fast  and 
                         efficient as possible. Getting into C++ two years ago wasn't easy for me, but after a few months and houndreds of problems it became
