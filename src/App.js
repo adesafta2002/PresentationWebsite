@@ -12,6 +12,7 @@ function App() {
   const [theme, setTheme]= useState(true)
   const [nav, setNav]= useState(false)
   const [coin, setCoin] = useState(true)
+  const [body, setBody] = useState("dark")
 
 
 
@@ -36,6 +37,15 @@ const getLocalTheme = () => {
   useEffect (() => {
     saveLocalTheme();
   },[theme])
+  useEffect(() => {
+    settingBody()
+    document.body.classList.toggle(body);
+  },[body,theme])
+  //functions
+  const settingBody = () =>{
+    if (theme===true) setBody("dark")
+    else setBody ("color")
+  }
 
 
   
