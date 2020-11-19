@@ -657,6 +657,7 @@ html, body{
   }
   .nav button{
     font-size: 12px !important;
+    text-align: center;
   }
   .nav select{
     font-size: 12px !important;
