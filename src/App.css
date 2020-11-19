@@ -586,6 +586,12 @@ display: flex !important;
   font-size: 25px;
   margin-top: 15px;
 }
+html, body{
+  background:  linear-gradient(100deg,#23074d, #cc5333 );
+  min-height: 100%;
+  min-height: 100vh;
+  overflow: auto; 
+}
 /*animations*/
 @keyframes show1{
   from{
@@ -793,7 +799,7 @@ display: flex !important;
   }
   .BarIcon{
     display: block;
-    padding:19px 3rem;
+    padding:19px 2rem;
     padding-top: 22px;
     font-size: 1.5rem;
     
@@ -807,7 +813,7 @@ display: flex !important;
   }
   .BarIcon{
     display: block;
-    padding:19px 3rem;
+    padding:19px 2rem;
     padding-top: 24px;
     font-size: 1.3rem;
     
