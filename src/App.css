@@ -127,7 +127,7 @@ nav h1::selection{
 }
 .body1{
   height:calc(100vh - 90.6px );
-  background-image: url('backgroundwhite.png');
+  background-image: url('./Components/Images/backgroundwhite.png');
   background-position: left 20% bottom;
   background-size: 40vh;
   background-repeat: no-repeat;
@@ -207,7 +207,7 @@ nav h1::selection{
   background: linear-gradient(100deg,#23074d, #cc5333 )!important ;
 }
 .body1_light{
-  background: url("slice1.png");
+  background: url("./Components/Images/slice1.png");
   height:calc(100vh - 90.6px );
   background-position: left 20% bottom;
   background-size: 40vh;
