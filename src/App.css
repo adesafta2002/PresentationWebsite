@@ -154,8 +154,8 @@ nav h1::selection{
   height: 60%;
   width: 60%;
   text-align:center;
-  
   color:  rgb(235, 233, 233);
+  animation: box1_animation 2s ease-in-out;
   
   
 }
@@ -284,7 +284,9 @@ nav h1::selection{
   overflow: hidden;
   display: flex;
   justify-content: center;
- 
+}
+.projectsdiv:hover{
+  box-shadow: 0px 10px 20px #1d0404;
 }
 .projectsdiv2{
   width: 1500px;
@@ -301,6 +303,9 @@ nav h1::selection{
   align-items: center ;
 
  
+}
+.projectsdiv2:hover{
+  box-shadow: 0px 10px 20px #1d0404;
 }
 
 .atestat_description{
@@ -359,8 +364,9 @@ nav h1::selection{
   flex-direction: row;
   box-shadow: -1px 0px 25px 0px #000000;
   margin: 75px 0;
-  
-  
+}
+.divmare:hover{
+  box-shadow: 0px 10px 20px #1d0404;
 }
 
 .active_light button {
@@ -603,6 +609,14 @@ html, body{
 }
 
 /*animations*/
+@keyframes box1_animation{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
 @keyframes show1{
   from{
     opacity: 1;
