@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
+import React, {useState } from 'react';
 import {FaBars} from 'react-icons/fa';
-import {Link} from 'react-router-dom';
+import {NavLink as Link, activeClassName } from 'react-router-dom';
 
 const Navbar = ({theme, setTheme,nav, setNav}) =>{
     const statusHandler = (e) =>{
@@ -13,40 +13,9 @@ const Navbar = ({theme, setTheme,nav, setNav}) =>{
         setNav(!nav)
         
     }
-    const [button1, setButton1] = useState(false)
-    const [button2, setButton2] = useState(false)
-    const [button3, setButton3] = useState(true)
-    const button1Handler = () =>{
-        setButton1(true)
-        setButton2(false)
-        setButton3(false)
-    }
-    const button2Handler = () =>{
-        setButton1(false)
-        setButton2(true)
-        setButton3(false)
-    }
-    const button3Handler = () =>{
-        setButton1(false)
-        setButton2(false)
-        setButton3(true)
-    }
-    const button1color = () =>{
-        if ((button1===true)&&(theme===false)) return "page_displayed_light";
-            else if (button1===true) return "page_displayed";
-                else return "";
-    }
-    const button2color = () =>{
-        if ((button2===true)&&(theme===false)) return "page_displayed_light";
-            else if (button2===true) return "page_displayed";
-                else return "";
-    }
-    const button3color = () =>{
-        if ((button3===true)&&(theme===false)) return "page_displayed_light";
-            else if (button3===true) return "page_displayed";
-                else return "";
-    }
-
+    
+    
+    
     return(
         
         <nav className={` ${theme ? "" : "navl"} nav `}>
@@ -60,9 +29,9 @@ const Navbar = ({theme, setTheme,nav, setNav}) =>{
                         
                     </select>
                 </li>
-                <li><Link to="/contact"><button onClick={button1Handler} className={`${button1color()}`} >Contact Me</button></Link></li>
-                <li><Link to="/projects"><button onClick={button2Handler} className={` ${button2color()}`} >My projects</button></Link></li>
-                <li><Link to="/"><button onClick={button3Handler} className={` ${button3color()}`} >About me</button></Link></li>
+                <li><Link exact to="/contact"  activeClassName={`${theme ? "active_dark" : "active_light"}`}><button>Contact Me</button></Link></li>
+                <li><Link exact to="/projects" activeClassName={`${theme ? "active_dark" : "active_light"}`}><button>My projects</button></Link></li>
+                <li><Link exact to="/" activeClassName={`${theme ? "active_dark" : "active_light"}`}><button>About me</button></Link></li>
             </ul>
             <div className="BarIcon" onClick={navHandler}>
             <FaBars/>

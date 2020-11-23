@@ -362,11 +362,12 @@ nav h1::selection{
   
   
 }
-.page_displayed{
-  color:rgb(231, 119, 75) !important ;
+
+.active_light button {
+  color: rgb(41, 38, 38) !important;
 }
-.page_displayed_light{
-  color:rgb(41, 38, 38) !important;
+.active_dark button {
+  color: rgb(231, 119, 75) !important;
 }
 
 .cards{
