@@ -38,7 +38,9 @@ const MyProject = ({theme, coin, setCoin}) =>{
             <div className={` ${theme ? "" : "projectsdiv_light"} projectsdiv `}>
                 <CoinFlip coin={coin} setCoin={setCoin} ></CoinFlip>
             </div>
-            
+            <div  className={` ${theme ? "" : "footer_light"} footer `}>
+                @ 2020, Adelin Safta
+            </div>
         </div>
     )
 }

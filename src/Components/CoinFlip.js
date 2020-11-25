@@ -37,7 +37,7 @@ return(
     <div className="coinflip_div">
         <img alt="head2" src={Head} onAnimationEnd={animationZero} className={` ${parseInt(coin) ? "head" : " "} ${rotate}`}/>
         <img alt="tails2" src={Tails} onAnimationEnd={animationZero} className={` ${parseInt(coin) ? "" : "tails"} ${rotate} `} />
-                <h1 className={`${show ? "animatieshow":""} h1_coin`} onAnimationEnd={animation2Zero}> {parseInt(coin) ? "Head!" : "Tails!"}</h1>
+                <h1 className={`${show ? "animatieshow":""} h1_coin`} onAnimationEnd={animation2Zero}> {parseInt(coin) ? "Heads!" : "Tails!"}</h1>
         <button onClick={clickHandler} >Flip a coin!</button>
     </div>
 )
