@@ -19,8 +19,9 @@ const Navbar = ({theme, setTheme,nav, setNav}) =>{
     return(
         
         <nav className={` ${theme ? "" : "navl"} nav `}>
-            
-            <h1>Safta Adelin Gabriel</h1>
+            <Link exact to="/">
+                <h1>Safta Adelin Gabriel</h1>
+            </Link>
             <ul className={` ${nav ? "nav_show" : ""}`}>
                 <li>
                     <select  onChange={statusHandler} defaultValue={`${theme ? "1": "0"}`}>
