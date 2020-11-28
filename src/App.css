@@ -713,6 +713,7 @@ html, body{
   border: 1.5px solid #131311;
   outline: none;
   transition: 1s ease-in-out;
+  margin-bottom: 20px;
 }
 .skills_button svg {
   position: absolute;
