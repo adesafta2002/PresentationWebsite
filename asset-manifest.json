@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/PresentationWebsite/static/css/main.370e9783.chunk.css",
+    "main.css": "/PresentationWebsite/static/css/main.5e95d600.chunk.css",
     "main.js": "/PresentationWebsite/static/js/main.52acd12f.chunk.js",
     "main.js.map": "/PresentationWebsite/static/js/main.52acd12f.chunk.js.map",
     "runtime-main.js": "/PresentationWebsite/static/js/runtime-main.3eab05ef.js",
@@ -10,7 +10,7 @@
     "static/js/3.3c5a6fb3.chunk.js": "/PresentationWebsite/static/js/3.3c5a6fb3.chunk.js",
     "static/js/3.3c5a6fb3.chunk.js.map": "/PresentationWebsite/static/js/3.3c5a6fb3.chunk.js.map",
     "index.html": "/PresentationWebsite/index.html",
-    "static/css/main.370e9783.chunk.css.map": "/PresentationWebsite/static/css/main.370e9783.chunk.css.map",
+    "static/css/main.5e95d600.chunk.css.map": "/PresentationWebsite/static/css/main.5e95d600.chunk.css.map",
     "static/js/2.0d1b9ae6.chunk.js.LICENSE.txt": "/PresentationWebsite/static/js/2.0d1b9ae6.chunk.js.LICENSE.txt",
     "static/media/atestat1.e8863137.png": "/PresentationWebsite/static/media/atestat1.e8863137.png",
     "static/media/atestat2.39af221c.png": "/PresentationWebsite/static/media/atestat2.39af221c.png",
@@ -28,7 +28,7 @@
   "entrypoints": [
     "static/js/runtime-main.3eab05ef.js",
     "static/js/2.0d1b9ae6.chunk.js",
-    "static/css/main.370e9783.chunk.css",
+    "static/css/main.5e95d600.chunk.css",
     "static/js/main.52acd12f.chunk.js"
   ]
 }
