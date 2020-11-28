@@ -838,6 +838,9 @@ html, body{
 .display_false{
   display: none;
 }
+button:disabled {
+  pointer-events: none;
+}
 /*animations*/
 @keyframes box1_animation{
   from{
