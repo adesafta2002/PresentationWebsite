@@ -732,6 +732,12 @@ html, body{
 .skills_button:hover svg {
   stroke-dashoffset: -480;
 }
+.skills_button_light:hover{
+  background: #2c272eb0;
+}
+.skills_button_light{
+  border: 1.5px solid #2c272eb0;
+}
 .skills_button span {
   color: white;
   font-size: 16px;
