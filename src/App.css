@@ -727,6 +727,7 @@ html, body{
 .skills_button:hover {
   transition: 1s ease-in-out;
   background: #131311;
+  opacity: 1 !important;
 }
 .skills_button:hover svg {
   stroke-dashoffset: -480;
