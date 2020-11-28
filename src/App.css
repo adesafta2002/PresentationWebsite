@@ -618,9 +618,225 @@ html, body{
   padding-top: 13px;
   color: rgba(245, 245, 245, 0.541);
   margin-top: 25px;
+  position: relative;
 }
 .footer_light{
   background:#6b2842;
+}
+.cards2{
+  width: 350px;
+  height: 400px;
+  border-radius: 10px;
+  background: #131312;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.cards2 div{
+  width: 100%;
+  height: 50%;
+}
+.cards2 div:nth-child(1){
+  border: 1px solid #cccc;
+  border-bottom: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards2 div:nth-child(2){
+  border: 1px solid #cccc;
+  border-top: none;
+  background: #cac9c9ce;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.cards2_light{
+  background: linear-gradient(120deg, #24074d, #c65134);
+}
+  
+.cards2_light div:nth-child(1){
+  border: 1px solid rgba(130, 91, 148, 0.8);
+  border-bottom: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards2_light div:nth-child(2){
+  border: 1px solid  rgba(130, 91, 148, 0.8);
+  border-top: none;
+  background: #d8c9dbce;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.fa-eye{
+  font-size: 140px;
+  color: whitesmoke;
+}
+.fa-database{
+  font-size: 140px;
+  color: whitesmoke;
+}
+.fa-code{
+  font-size: 140px;
+  color: whitesmoke;
+}
+.skills_main{
+  padding-top: 90.6px;
+  height: calc(100vh - 90.6px);
+  width: 100%;
+  display: flex ;
+  justify-content: space-evenly;
+  align-items:center;
+  flex-direction: row;
+}
+.skills_button{
+  width: 160px;
+  height: 50px;
+  cursor: pointer;
+  background: transparent;
+  border: 1.5px solid #131311;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+.skills_button svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+.skills_button:hover {
+  transition: 1s ease-in-out;
+  background: #131311;
+}
+.skills_button:hover svg {
+  stroke-dashoffset: -480;
+}
+.skills_button span {
+  color: white;
+  font-size: 16px;
+  font-weight: 100;
+}
+.container_button {
+  
+  position: relative;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, 85%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center_button {
+  width: 160px;
+  height: 50px;
+  position: absolute;
+}
+.frontend_modal{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  width: 70%;
+  height: 70%;
+  background:rgb(214, 214, 214) ;
+  border-radius: 10px;
+  align-items: center;
+  text-align: center;
+  padding-top: 40px;
+  color: #131311;
+  overflow: hidden;
+  z-index: 102;
+}
+.front_button{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 90px;
+  border: none;
+  border-radius: 10px;
+  background:#131311;
+  cursor: pointer;
+}
+.front_button:hover{
+  box-shadow: 0px 0px 1px 2px #1f1f1f ;
+}
+.fa-times{
+  font-size: 50px;
+  color: whitesmoke;
+ 
+}
+.cards2 h2{
+  color: #000000c0;
+}
+.frontend_card_button{
+  width: 110px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+.cards_title{
+  display: flex;
+  flex-direction: column;
+  border: none !important;
+}
+.popup_photo{
+  width: 35%;
+  margin-top:30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0.5px 0.5px #1313126c ;
+}
+.popup_list{
+  margin-top: 20px;
+  list-style: none;
+  align-items: left;
+  text-align: left;
+  margin-left: 50px;
+}
+.popup_div{
+ margin-top: 25px;
+}
+.popup_h3{
+ color: #000000c5;
+ margin-top: 20px;
+}
+.skills_separator{
+  width: 100%;
+  height: 1px;
+  background: #00000071;
+  margin-bottom: 10px;
+}
+.display{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #1b1b1bab;
+  z-index: 101;
+}
+.display_false{
+  display: none;
 }
 /*animations*/
 @keyframes box1_animation{
@@ -647,6 +863,21 @@ html, body{
   to{
     
     transform:rotateY(720deg)
+  }
+}
+@media only screen and (max-width: 1240px) {
+  .skills_main{
+    padding-top: 90.6px;
+    height: auto;
+    width: 100%;
+    display: flex ;
+    justify-content: space-evenly;
+    align-items:center;
+    flex-direction: column;
+  }
+  .cards2{
+    margin-top:40px;
+    
   }
 }
 @media only screen and (max-width: 1800px) {

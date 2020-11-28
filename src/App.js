@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar';
 import {HashRouter , Switch, Route} from 'react-router-dom';
 import MyProject from './Components/MyProjects';
 import Contact from './Components/Contact';
+import Skills from './Components/Skills'
 
 function App() {
 
@@ -57,12 +58,16 @@ const getLocalTheme = () => {
         <Switch>
             <Route  exact path="/">
                 <Body theme={theme}/>
+                
             </Route>
             <Route  exact path="/projects">
                 <MyProject theme={theme} coin={coin} setCoin={setCoin} />
             </Route>
             <Route  exact path="/contact">
                 <Contact theme={theme}/>
+            </Route>
+            <Route exact path="/skills">
+                  <Skills theme={theme}/>
             </Route>
 
         </Switch>

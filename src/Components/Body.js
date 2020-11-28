@@ -1,5 +1,8 @@
 import React from 'react'
 import Bar from './Bar'
+import {NavLink as Link} from 'react-router-dom';
+
+
 
 
 
@@ -29,6 +32,19 @@ const Body = ({theme}) =>{
 
                 
                    </p>
+                   <div className="container_button">
+                   <div className="center_button">
+                       <Link  to="/skills">
+                        <button className="skills_button">
+                            <svg width="160px" height="50px" viewBox="0 0 160 50" class="border">
+                            <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                            <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                            </svg>
+                            <span>MY SKILLS</span>
+                        </button>
+                        </Link>
+                   </div>
+                   </div>
                 </div>
             </div>
         </div>
