@@ -24,7 +24,7 @@ const Navbar = ({theme, setTheme,nav, setNav}) =>{
             </Link>
             <ul className={` ${nav ? "nav_show" : ""}`}>
                 <li>
-                    <select  onChange={statusHandler} defaultValue={`${theme ? "1": "0"}`}>
+                    <select  onChange={statusHandler} defaultValue={`${theme ? "1": "0"}`} value={`${theme ? "1": "0"}`}>
                         <option value="0" >Color Theme </option>
                         <option value="1" >Dark Theme </option>
                         
